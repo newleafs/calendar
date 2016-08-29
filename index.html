@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calendar</title>
+	<link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+	<div class="container">
+		<div class="wrap">
+			<div class="changeTime">
+				<div class="left-triangle big"id="year-big"></div>
+				<div class="left-triangle small"id="month-big"></div>
+				<div id="toDay"><span id="year"></span>年<span id="month"></span>月<span id="day"></span>日</div>
+				<div class="right-triangle small"id="month-small"></div>
+				<div class="right-triangle big"id="year-small"></div>
+				<span class="thisTime"id="thisTime"></span>
+			</div>		
+			<div class="table">
+				<ul class="table-head">
+					<li>星期一</li>
+					<li>星期二</li>
+					<li>星期三</li>
+					<li>星期四</li>
+					<li>星期五</li>
+					<li class="weekend">星期六</li>
+					<li class="weekend">星期日</li>
+				</ul>
+				<ul id="days"class="days">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/setFestival.js"></script>
+	<script src="js/lunarCalendar.js"></script>
+	<script src="js/calendar.js"></script>
+</body>
+</html>

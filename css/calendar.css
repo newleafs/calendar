@@ -1,0 +1,113 @@
+*{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+
+.wrap{
+	width:60%;
+	margin:0 auto;
+}
+.changeTime{
+	width:100%;
+	padding-top:20px;
+}
+.left-triangle{
+	width:0;
+	height:0;
+	display: inline-block;
+	border:solid transparent;
+	border-right-color:#ddd;
+}
+.right-triangle{
+	width:0;
+	height:0;
+	display:inline-block;
+	border:solid transparent;
+	border-left-color:#ddd;
+	
+}
+.left-triangle:hover{
+	cursor:pointer;
+	border-right-color:#bbb;
+}
+.right-triangle:hover{
+	cursor:pointer;
+	border-left-color:#bbb;
+}
+.big{
+	border-width:13px;
+	margin-bottom: -5px;
+}
+.small{
+	border-width:8px;
+}
+
+#toDay{
+	display:inline-block;
+	padding:0 20%;
+	color:#000;
+}
+
+.table{
+	width:100%;
+	text-align:center;
+	margin-top:5px;
+}
+.table-head{
+	line-height: 4em;
+	background-color:rgba(255, 204, 255, 0.48);
+}
+
+.table li{
+	float:left;
+	width:13.9%;
+	margin-left:2px;
+	margin-top:2px;
+	background-color:rgba(255, 204, 204, 0.46);
+	cursor:pointer;
+}
+.days li{
+	height:100px;
+	line-height:3em;
+	font-size:2em;
+	font-weight:bold;
+}
+.days li:hover{
+	background-color:#fff;
+}
+.days li div{
+	height:100%;
+}
+.thisTime{
+	float:right;
+	margin-right:10px;
+	cursor:pointer;
+}
+.thisTime:hover{
+	text-decoration: underline;
+}
+.weekend{
+	color:#CC3333;
+}
+.frontMonthDay{
+	background-color:#999;
+}
+.now{
+	background-color: #FFCCFF;
+}
+.dateCss{
+	position:relative;
+}
+.festival{
+	position:absolute;
+	font-size:0.5em;
+	color:#CC3333;
+	right:20px;
+	bottom:-35px;
+}
+.myDay{
+	background-color:#FFCCFF;
+}
