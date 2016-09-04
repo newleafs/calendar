@@ -29,6 +29,7 @@ function setInternationalFestival(month,dayNum){
 
 function appendFestival(content,id){
 	//删除阴历添加节日
+	console.log(id);
 	var lunar = $("lunar"+id);
 	$("li"+id).removeChild(lunar);
 	var fest = document.createElement("span");
@@ -73,40 +74,40 @@ function setSolarTerms(cYear,cMonth,cDay,lmonthDay,wmonthDay,reset){
     	if (isEnd) break;
     }
 }
-function setLunarFestival(cMonth,cDay,lmonthDay,wmonthDay){	
-	var lFtv = [
-		{val:"11",fst:"春节"},
-		{val:"115",fst:"元宵节"},
-		{val:"55",fst:"端午节"},
-		{val:"77",fst:"七夕"},
-		{val:"815",fst:"中秋节"},
-		{val:"99",fst:"重阳节"},
-		{val:"128",fst:"腊八节"},
-		{val:"1224",fst:"小年"}
-	];
-	var str = [];
-	var i,j;
-	var k = 0;
-	var result = cMonth;
-	while ( k < wmonthDay){
-		for (var i=cDay;i<lmonthDay;i++) {
-			str[i] = cMonth.toString() + i.toString();
-			for (j in lFtv){
-				if (str[i] == lFtv[j].val) {
-					appendFestival(lFtv[j].fst,k);
-				}
-			}
-			k++;
-		}
-		if (cMonth == 12){
-			cDay = 0;
-			cMonth = 1;
-		}
+// function setLunarFestival(cMonth,cDay,lmonthDay,wmonthDay){	
+// 	var lFtv = [
+// 		{val:"11",fst:"春节"},
+// 		{val:"115",fst:"元宵节"},
+// 		{val:"55",fst:"端午节"},
+// 		{val:"77",fst:"七夕"},
+// 		{val:"815",fst:"中秋节"},
+// 		{val:"99",fst:"重阳节"},
+// 		{val:"128",fst:"腊八节"},
+// 		{val:"1224",fst:"小年"}
+// 	];
+// 	var str = [];
+// 	var i,j;
+// 	var k = 0;
+// 	var result = cMonth;
+// 	while ( k < wmonthDay){
+// 		for (var i=cDay;i<lmonthDay;i++) {
+// 			str[i] = cMonth.toString() + i.toString();
+// 			for (j in lFtv){
+// 				if (str[i] == lFtv[j].val) {
+// 					appendFestival(lFtv[j].fst,k);
+// 				}
+// 			}
+// 			k++;
+// 		}
+// 		if (cMonth == 12){
+// 			cDay = 0;
+// 			cMonth = 1;
+// 		}
 
-		if (i > lmonthDay-1 && cMonth!= 12 && cMonth == result) {
-			cDay = 0;
-			cMonth++;
-		}
-	}
+// 		if (i > lmonthDay-1 && cMonth!= 12 && cMonth == result) {
+// 			cDay = 0;
+// 			cMonth++;
+// 		}
+// 	}
 
-}
+// }

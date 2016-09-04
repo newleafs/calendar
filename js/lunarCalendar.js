@@ -64,7 +64,7 @@ function caculateLunar(year,month,monthDay){
 	//显示节气
 	setSolarTerms(cYear,cMonth,cDay,lmonthDay,monthDay,0);
 	//显示农历节日
-	setLunarFestival(cMonth,cDay,lmonthDay,monthDay);
+	// setLunarFestival(cMonth,cDay,lmonthDay,monthDay);
 }
 
 function showLunarDate(disYear,cMonth,cDay,lmonthDay,monthDay){
